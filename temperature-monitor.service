@@ -1,0 +1,12 @@
+[Unit]
+Description=Temperature Monitor Thingy
+
+[Service]
+User=htpc
+Group=htpc
+ExecStart=/home/htpc/temperature/log.sh
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
